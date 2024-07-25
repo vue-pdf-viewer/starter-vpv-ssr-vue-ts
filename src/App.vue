@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import ClientOnly from './components/ClientOnly.vue';
   import type { ToolbarOptions } from '@vue-pdf-viewer/viewer';
-  import { defineAsyncComponent, watch, h, ref } from 'vue';
+  import { defineAsyncComponent, h } from 'vue';
   
   const toolbarOptions: Partial<ToolbarOptions> | false = false
 
