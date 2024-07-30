@@ -100,7 +100,9 @@ For more examples, please refer to the `src/App.vue` file in this repository:
  - Without Toolbar
  - Mobile View
 
-If you want to find out more configurations. Please check the [documentation](https://docs.vue-pdf-viewer.dev) site.
+_Remark: If you would like more examples, feel free open an issue._
+
+For more configurations, please check the [documentation](https://docs.vue-pdf-viewer.dev) site.
 
 ---
 
