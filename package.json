@@ -28,7 +28,7 @@
 	},
 	"pnpm": {
 		"overrides": {
-			"pdfjs-dist": "4.4.168"
+			"pdfjs-dist": "4.10.38"
 		}
 	}
 }
