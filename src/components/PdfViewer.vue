@@ -1,15 +1,15 @@
 <script setup lang="ts">
-	import { onBeforeMount, watch, ref } from "vue";
-	import { VPdfViewer, useLicense } from "@vue-pdf-viewer/viewer";
+	import { watch, ref } from "vue";
+	import { VPdfViewer } from "@vue-pdf-viewer/viewer";
 
 	const vpvRef = ref<InstanceType<typeof VPdfViewer> | null>(null);
-	onBeforeMount(() => {
-		useLicense({ licenseKey: "your-license-key" });
-	});
+
 	watch(
 		vpvRef,
 		(newVal) => {
-			console.log("These are VPV instance properties", Object.keys(newVal));
+			if (newVal) {
+				console.log("These are VPV instance properties", Object.keys(newVal));
+			}
 		},
 		{ deep: true }
 	);
