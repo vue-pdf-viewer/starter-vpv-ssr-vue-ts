@@ -1,6 +1,6 @@
-# VPV Starter Toolkit in Vue 3 + TypeScript + SSR
+# Vue PDF Viewer Starter Starter Toolkit in Vue 3 + TypeScript + SSR
 
-Welcome to the Vue PDF Viewer (VPV) starter toolkit! This repository provides a comprehensive guide on how to use VPV with Vue 3, SSR mode and TypeScript. This repo showcases how VPV can be integrated and rendered as part of a Vue.js (SSR) project.
+Welcome to the Vue PDF Viewer starter toolkit! This repository provides a comprehensive guide on how to use Vue PDF Viewer Starter with Vue 3, SSR mode and TypeScript. This repo showcases how Vue PDF Viewer Starter can be integrated and rendered as part of a Vue.js (SSR) project.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -30,7 +30,7 @@ npm install
     cd starter-vpv-ssr-vue-ts
     ```
 
-2. **Install Dependencies**: Install the necessary dependencies using npm or yarn
+2. **Install Dependencies**: Install the necessary dependencies using npm, yarn, pnpm or bun
 
     ```bash
     npm install
@@ -42,14 +42,14 @@ npm install
     bun install
     ```
 
-_Remark: For `pnpm`, there is a bit more configuration required which can be found [here](https://docs.vue-pdf-viewer.dev/troubleshooting.html#_3-resolving-peer-dependency-version-mismatch-with-pnpm)._
+_Remark: For `pnpm`, there is a bit more configuration required which can be found [here](https://docs.vue-pdf-viewer.dev/introduction/getting-started.html#install-vue-pdf-viewer)._
 
 
 ### Running the Example Project
 
-This repo includes an example project to demonstrate how to use VPV. To run the example project:
+This repository includes an example project to demonstrate Vue PDF Viewer in action:
 
-1. **Serve the Application**: Use the following command to start the development server
+1. **Start the Development Server**: Use the following command to start the development server
 
     ```bash
     npm run dev
@@ -63,11 +63,11 @@ This repo includes an example project to demonstrate how to use VPV. To run the 
 
 2. **Open in Browser**: Open your browser and navigate to `http://localhost:5173` (or the port specified in your terminal) to see the example project in action
 
-### Using the VPV Component
+### Using the Vue PDF Viewer Starter Component
 
-Once the example project is running, you can explore the source code to see how the VPV component is integrated. Here is a brief overview:
+Once the example project is running, you can explore the source code to see how the Vue PDF Viewer Starter component is integrated. Here is a brief overview:
 
-1. **Import the component**: Import the desired VPV component into your Vue file using `defineAsyncComponent`
+1. **Import the component**: Import the desired Vue PDF Viewer Starter component into your Vue file using `defineAsyncComponent`
 
     ```typescript
     <script setup lang="ts">
@@ -83,7 +83,7 @@ Once the example project is running, you can explore the source code to see how 
     </script>
     ```
 
-2. **Use the component in the template**: Add the VPV component to your template section
+2. **Use the component in the template**: Add the Vue PDF Viewer Starter component to your template section
 
     ```html
     <template>
@@ -103,6 +103,10 @@ For more examples, please refer to the `src/App.vue` file in this repository:
 _Remark: If you would like more examples, feel free open an issue._
 
 For more configurations, please check the [documentation](https://docs.vue-pdf-viewer.dev) site.
+
+## Meta
+- Homepage: [https://www.vue-pdf-viewer.dev](https://www.vue-pdf-viewer.dev)
+- Docs: [https://docs.vue-pdf-viewer.dev](https://docs.vue-pdf-viewer.dev)
 
 ---
 
