@@ -11,6 +11,7 @@
 		"preview": "cross-env NODE_ENV=production node server"
 	},
 	"dependencies": {
+		"@vue-pdf-viewer/annotation": "latest",
 		"@vue-pdf-viewer/viewer": "latest",
 		"compression": "^1.7.4",
 		"express": "^4.19.2",

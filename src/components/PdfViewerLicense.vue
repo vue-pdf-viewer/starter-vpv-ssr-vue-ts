@@ -1,11 +1,11 @@
 <script setup lang="ts">
 	import { onBeforeMount } from "vue";
-	import { useLicense } from "@vue-pdf-viewer/viewer";
+	// import { useLicense } from "@vue-pdf-viewer/viewer";
 	const props = defineProps<{
-		licenseKey: string;
+		licenseKey?: string;
 	}>();
 	onBeforeMount(() => {
-		useLicense(props.licenseKey);
+		// useLicense(props.licenseKey);
 	});
 </script>
 <template>

@@ -2,7 +2,7 @@
 	import type { ToolbarOptions } from "@vue-pdf-viewer/viewer";
 	import { defineAsyncComponent, h } from "vue";
 	import ClientOnly from "./components/ClientOnly.vue";
-
+	import VPdfAnnotationPlugin from "@vue-pdf-viewer/annotation";
 	const toolbarOptions: Partial<ToolbarOptions> | false = false;
 
 	const VPdfViewerLicense = defineAsyncComponent(async () => {
@@ -16,6 +16,8 @@
 		const module = await import("./components/PdfViewer.vue");
 		return module.default;
 	});
+
+	const plugins = [VPdfAnnotationPlugin(/* options */)];
 </script>
 
 <template>
@@ -42,6 +44,14 @@
 			<div>
 				<ClientOnly class="pdf-viewer-wrapper-mobile">
 					<VPdfViewerComp
+						src="https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf" />
+				</ClientOnly>
+			</div>
+			<h2>Default Toolbar with Annotation</h2>
+			<div>
+				<ClientOnly class="pdf-viewer-wrapper">
+					<VPdfViewerComp
+						:plugins="plugins"
 						src="https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf" />
 				</ClientOnly>
 			</div>
